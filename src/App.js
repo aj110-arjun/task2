@@ -5,6 +5,7 @@ import Home from './Components/screens/Home';
 import Project from './Components/screens/Project';
 import Experience from './Components/screens/Experience';
 import Enquiry from './Components/screens/Enquiry';
+import Error from './Components/screens/Error';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/project" element={<Project />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/enquiry" element={<Enquiry />} />
+                <Route path="*" element={<Error />} />
 
             </Routes>
         </Router>  
